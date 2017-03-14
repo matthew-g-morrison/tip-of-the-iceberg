@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tipcalc/SettingsViewController.swift"
+            timestampString = "511158741.214422"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipcalc.SettingsViewController.__deallocating_deinit"
+                  moduleName = "tipcalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matthew/Workspace/tipcalc/tipcalc/SettingsViewController.swift"
+                  timestampString = "511158741.897273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipcalc.SettingsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; tipcalc.SettingsViewController"
+                  moduleName = "tipcalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matthew/Workspace/tipcalc/tipcalc/SettingsViewController.swift"
+                  timestampString = "511158741.900077"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipcalc.SettingsViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; tipcalc.SettingsViewController"
+                  moduleName = "tipcalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matthew/Workspace/tipcalc/tipcalc/SettingsViewController.swift"
+                  timestampString = "511158741.904512"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipcalc.SettingsViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;tipcalc.SettingsViewController&gt;"
+                  moduleName = "tipcalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matthew/Workspace/tipcalc/tipcalc/SettingsViewController.swift"
+                  timestampString = "511158741.907516"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipcalc.SettingsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;tipcalc.SettingsViewController&gt;"
+                  moduleName = "tipcalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matthew/Workspace/tipcalc/tipcalc/SettingsViewController.swift"
+                  timestampString = "511158741.910172"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

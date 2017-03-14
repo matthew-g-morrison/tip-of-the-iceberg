@@ -25,12 +25,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let defaultTipIndex = UserDefaults.standard.object(forKey: "defaultTipIndex") as? Int {
+            tipPercentControl.selectedSegmentIndex = defaultTipIndex
+        }
+        else {
+            tipPercentControl.selectedSegmentIndex = 0
+        }
+    }
+    
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
     
     @IBAction func calculateTip(_ sender: AnyObject) {
-        let tipPercentages = [0.18, 0.20, 0.25]
+        let tipPercentages = [0.18, 0.20, 0.22]
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[tipPercentControl.selectedSegmentIndex]
         let total = bill + tip
