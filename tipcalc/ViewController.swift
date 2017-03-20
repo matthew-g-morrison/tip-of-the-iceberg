@@ -50,7 +50,9 @@ class ViewController: UIViewController {
         let total = bill + tip
         
         tipLabel.text = String(format: "$%.2f", tip)
+        print(String(format: "$%.2f", total))
         totalLabel.text = String(format: "$%.2f", total)
+        print(totalLabel.text)
         UserDefaults.standard.set(billField.text, forKey: "defaultTip")
     }
  }
