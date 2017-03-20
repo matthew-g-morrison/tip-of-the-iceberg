@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        let currentDateTime = Date()
+        UserDefaults.standard.set(currentDateTime, forKey: "appCloseTime")
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -35,6 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        if let lastClosetime = UserDefaults.standard.object(forKey: "appCloseTime") as? Date {
+            
+            let calendar = Calendar.current
+            let minutes = calendar.component(.minute, from: lastClosetime)
+            if(minutes > 10) {
+                UserDefaults.standard.set(nil, forKey: "defaultTipIndex")
+            }
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

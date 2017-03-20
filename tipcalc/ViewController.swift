@@ -17,23 +17,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        billField.becomeFirstResponder()
+        
         if let defaultTipIndex = UserDefaults.standard.object(forKey: "defaultTipIndex") as? Int {
             tipPercentControl.selectedSegmentIndex = defaultTipIndex
         }
         else {
             tipPercentControl.selectedSegmentIndex = 0
         }
-
+        
+        if let defaultTip = UserDefaults.standard.object(forKey: "defaultTip") as? String {
+            billField.text = defaultTip
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true)
     }
     
     @IBAction func calculateTip(_ sender: AnyObject) {
@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        UserDefaults.standard.set(billField.text, forKey: "defaultTip")
     }
  }
 
